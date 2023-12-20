@@ -152,7 +152,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-12-2023 16:22</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-12-2023 17:15</span>
     <br style="clear:left"/>
 </div>
 
@@ -193,9 +193,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Successfully add two products to the shopping cart
+                                <span class="failing-color">Successfully add two products to the shopping cart
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -212,61 +212,102 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: (true) but: was (false)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.Sanangel.Stepdef.SanangelStepdef.theUserShouldBeAbleToViewTheProductsInTheShoppingCart(SanangelStepdef.java:42)<br />✽.the user should be able to view the products in the shopping cart.(file:///C:/Users/JoséAndrésMurilloMan/IdeaProjects/RetoTecnico/src/test/resources/features/addProductToCart.feature:7)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource13647867466195457146.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" Given that the user opens the browser and searches for a product through the search bar." width="1920"/>
-                <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" Usuario open browser task" width="1920"/>
-                <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" usuario opens the browser at https://sanangel.com.co/" width="1920"/>
+                <img src="43c87bf9240efbcbbea2c73dd95962058e2772006f5054039c9637ca4242848a.png" title=" Given that the user opens the browser and searches for a product through the search bar." width="1920"/>
+                <img src="43c87bf9240efbcbbea2c73dd95962058e2772006f5054039c9637ca4242848a.png" title=" Usuario open browser task" width="1920"/>
+                <img src="43c87bf9240efbcbbea2c73dd95962058e2772006f5054039c9637ca4242848a.png" title=" usuario opens the browser at https://sanangel.com.co/" width="1920"/>
                 <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" Usuario open browser task (completed)" width="1920"/>
                 <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" Usuario home task" width="1920"/>
                 <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" usuario clicks on input search" width="1920"/>
-                <img src="156ad91f43510bbb0b0f0f728951ff394d6cff7eb22b70692dfdef156ff50bb2.png" title=" usuario clicks on input search (completed)" width="1920"/>
-                <img src="156ad91f43510bbb0b0f0f728951ff394d6cff7eb22b70692dfdef156ff50bb2.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
-                <img src="58d86e1f871a8dbc0e01767bf74a8ececb103eec005d38efe9e3510b951f7bd0.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="12151c97be2fb8dd6d71468766a07b5b20bd82d53de0059a8f069c5ee2beb145.png" title=" usuario clicks on input search (completed)" width="1920"/>
+                <img src="d5f1f9b0059825bfb191ddb0842ec26e725b3bd119d65030519cb8dfa8a3f9f5.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="0d484aa92961af6342680f9828addefb3ef102dda719716eac4a854efd6d5e93.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
                 <img src="b52c7cbd020516ac77721092c1efd339f87324296ac31b6c7e8f6bbc067874fb.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search (completed)" width="1920"/>
                 <img src="b52c7cbd020516ac77721092c1efd339f87324296ac31b6c7e8f6bbc067874fb.png" title=" Usuario home task (completed)" width="1920"/>
                 <img src="b52c7cbd020516ac77721092c1efd339f87324296ac31b6c7e8f6bbc067874fb.png" title=" Given that the user opens the browser and searches for a product through the search bar. (completed)" width="1920"/>
-                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" When the user can select two products randomly with different quantities and add them to the cart." width="1920"/>
-                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" Usuario selectproduct task" width="1920"/>
-                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" Usuario random select" width="1920"/>
-                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" usuario clicks on [[ChromeDriver: chrome on WINDOWS (4cfbe5deca88903bdfde0003fb562d63)] -&gt; xpath: //h2[@class='woocommerce-loop-product__title']]" width="1920"/>
-                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" Usuario random select (completed)" width="1920"/>
-                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" usuario clicks on btn quantity" width="1920"/>
-                <img src="d0780230122b379890e057c05bf086f5c334a3832d9a3b9a61f980d94b3a5aa6.png" title=" usuario clicks on btn quantity (completed)" width="1920"/>
-                <img src="d0780230122b379890e057c05bf086f5c334a3832d9a3b9a61f980d94b3a5aa6.png" title=" usuario clears field btn quantity" width="1920"/>
-                <img src="ea5cb7426b857d2e4aca65716380098730023e408a127d4038813b7e8fe7b846.png" title=" usuario clears field btn quantity (completed)" width="1920"/>
-                <img src="ea5cb7426b857d2e4aca65716380098730023e408a127d4038813b7e8fe7b846.png" title=" usuario enters '2' then hits [ENTER] into btn quantity" width="1920"/>
-                <img src="a5853e819dea9d31bda9b55b9fe5b4279eb6c9d16a1c4781fc7eff7a94812b03.png" title=" usuario enters '2' then hits [ENTER] into btn quantity" width="1920"/>
+                <img src="6180e3e8b1cd0a0333e67d9221f5672b44bb2ca0a6015baed5904722f10a1357.png" title=" When the user can select two products randomly with different quantities and add them to the cart." width="1920"/>
+                <img src="6180e3e8b1cd0a0333e67d9221f5672b44bb2ca0a6015baed5904722f10a1357.png" title=" Usuario selectproduct task" width="1920"/>
+                <img src="6180e3e8b1cd0a0333e67d9221f5672b44bb2ca0a6015baed5904722f10a1357.png" title=" Usuario random select" width="1920"/>
+                <img src="6180e3e8b1cd0a0333e67d9221f5672b44bb2ca0a6015baed5904722f10a1357.png" title=" usuario clicks on [[ChromeDriver: chrome on WINDOWS (f90bb16a66ea4143614eb8b2ac96fda2)] -&gt; xpath: //h2[@class='woocommerce-loop-product__title']]" width="1920"/>
+                <img src="6180e3e8b1cd0a0333e67d9221f5672b44bb2ca0a6015baed5904722f10a1357.png" title=" Usuario random select (completed)" width="1920"/>
+                <img src="6180e3e8b1cd0a0333e67d9221f5672b44bb2ca0a6015baed5904722f10a1357.png" title=" usuario clicks on btn quantity" width="1920"/>
+                <img src="ba161aea0d2f8e96fca1392170667b1145a013a6d1376ed5dac002de7277eb9e.png" title=" usuario clicks on btn quantity" width="1920"/>
+                <img src="69eebc38bbed49cd05305ce38b5d253ebf8c4cbe087dbdadd9bd3055e4935f34.png" title=" usuario clicks on btn quantity (completed)" width="1920"/>
+                <img src="ba161aea0d2f8e96fca1392170667b1145a013a6d1376ed5dac002de7277eb9e.png" title=" usuario clears field btn quantity" width="1920"/>
+                <img src="c3992f94376756d5f909ff911d13c7a39f954a330777f067ca18ddf60b32a4d2.png" title=" usuario clears field btn quantity (completed)" width="1920"/>
+                <img src="c3992f94376756d5f909ff911d13c7a39f954a330777f067ca18ddf60b32a4d2.png" title=" usuario enters '2' then hits [ENTER] into btn quantity" width="1920"/>
+                <img src="94200f54673d5303ff9c5822b145006db10333eae542c38423a3abb169451a7a.png" title=" usuario enters '2' then hits [ENTER] into btn quantity" width="1920"/>
                 <img src="587940ab7eeef6abd1095a4acf83dce478d10172ead5fc25751576acb248bb8e.png" title=" usuario enters '2' then hits [ENTER] into btn quantity (completed)" width="1920"/>
                 <img src="587940ab7eeef6abd1095a4acf83dce478d10172ead5fc25751576acb248bb8e.png" title=" Usuario home task" width="1920"/>
                 <img src="587940ab7eeef6abd1095a4acf83dce478d10172ead5fc25751576acb248bb8e.png" title=" usuario clicks on input search" width="1920"/>
-                <img src="0767f3bf1f55752c0f359cb67aa1aff49faae241ec25a7a8e87164eac7dc98a2.png" title=" usuario clicks on input search" width="1920"/>
-                <img src="96a606430574f49b37704f93aa4d8beb904eb33f11dbe0daa71645f3db36995a.png" title=" usuario clicks on input search (completed)" width="1920"/>
-                <img src="96a606430574f49b37704f93aa4d8beb904eb33f11dbe0daa71645f3db36995a.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
-                <img src="b22ac2670f50f36da5e00e61b528c133c19977826b71970653e2d61c6f2324b9.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
-                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search (completed)" width="1920"/>
-                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" Usuario home task (completed)" width="1920"/>
-                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" Usuario home task" width="1920"/>
-                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" usuario clicks on input search" width="1920"/>
-                <img src="2cc8f9452c9158887156479e933c8090f78de463a3eaae4bc57c505c144e80e3.png" title=" usuario clicks on input search" width="1920"/>
-                <img src="d18909d58e2a6ae79751574858054363606a5e940c58bc5e4ca5bb74bd16059e.png" title=" usuario clicks on input search (completed)" width="1920"/>
-                <img src="6716160cb64d202076248134af818588b59084b9578269109b9cfe92bb7f4d76.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="cb2b1e9adb1a9901a979a29fc65a7628734a2d95510bac8e3e50f3dc39b49d63.png" title=" usuario clicks on input search" width="1920"/>
+                <img src="b62ccc1deb873b832da4247b1f17bac50b02fcfec20fb7d922520ac3d45e640f.png" title=" usuario clicks on input search (completed)" width="1920"/>
+                <img src="cb2b1e9adb1a9901a979a29fc65a7628734a2d95510bac8e3e50f3dc39b49d63.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="29ace684b13183f1e1669949910359a93160e8f3ad1fbfec44fb7aa50ce76318.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="fcaf88968e10479172f011ce8f04ab25403c3ab83b9f4e900865bba7f4c4485e.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search (completed)" width="1920"/>
+                <img src="fcaf88968e10479172f011ce8f04ab25403c3ab83b9f4e900865bba7f4c4485e.png" title=" Usuario home task (completed)" width="1920"/>
+                <img src="fcaf88968e10479172f011ce8f04ab25403c3ab83b9f4e900865bba7f4c4485e.png" title=" Usuario home task" width="1920"/>
+                <img src="fcaf88968e10479172f011ce8f04ab25403c3ab83b9f4e900865bba7f4c4485e.png" title=" usuario clicks on input search" width="1920"/>
+                <img src="3b5d23211f748cba0c20c8ccea9ce5dad25240645242c178d9350eaae91dbd46.png" title=" usuario clicks on input search" width="1920"/>
+                <img src="a74f417ec8abe077c259a628ce9476e4aff67ca48688b06b71214d4152587075.png" title=" usuario clicks on input search (completed)" width="1920"/>
+                <img src="4bea9a8532ff1231a573476450a16d117fb2521c4fb3e3946a89ec86acf9469a.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
                 <img src="fa22cccfce23d06345ab0dd13e19d1ddcad023378985d521e8f76f54b40a7af7.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
-                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search (completed)" width="1920"/>
-                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" Usuario random select" width="1920"/>
-                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" usuario clicks on [[ChromeDriver: chrome on WINDOWS (4cfbe5deca88903bdfde0003fb562d63)] -&gt; xpath: //h2[@class='woocommerce-loop-product__title']]" width="1920"/>
-                <img src="efe501990fbef237deee6dfd2032457369da1c5103adee40001049d8eb8c5d5a.png" title=" usuario clicks on [[ChromeDriver: chrome on WINDOWS (4cfbe5deca88903bdfde0003fb562d63)] -&gt; xpath: //h2[@class='woocommerce-loop-product__title']] (completed)" width="1920"/>
-                <img src="efe501990fbef237deee6dfd2032457369da1c5103adee40001049d8eb8c5d5a.png" title=" Usuario random select (completed)" width="1920"/>
-                <img src="efe501990fbef237deee6dfd2032457369da1c5103adee40001049d8eb8c5d5a.png" title=" usuario clicks on btn quantity" width="1920"/>
-                <img src="4901a450ac33e56b39bdf2fc8078cd4eb657c84d569da147608805237de1880c.png" title=" usuario clicks on btn quantity (completed)" width="1920"/>
-                <img src="4901a450ac33e56b39bdf2fc8078cd4eb657c84d569da147608805237de1880c.png" title=" usuario clears field btn quantity" width="1920"/>
-                <img src="f02cbba31eb2a17360228eda7d54f259e2ab205949df3c29c1ec3e996eff8398.png" title=" usuario clears field btn quantity (completed)" width="1920"/>
-                <img src="f02cbba31eb2a17360228eda7d54f259e2ab205949df3c29c1ec3e996eff8398.png" title=" usuario enters '5' then hits [ENTER] into btn quantity" width="1920"/>
-                <img src="d8ef4c6595312328b3be25a7c9a3402992e2242dcddad162ed030662e4754cc8.png" title=" usuario enters '5' then hits [ENTER] into btn quantity" width="1920"/>
+                <img src="fcaf88968e10479172f011ce8f04ab25403c3ab83b9f4e900865bba7f4c4485e.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search (completed)" width="1920"/>
+                <img src="fcaf88968e10479172f011ce8f04ab25403c3ab83b9f4e900865bba7f4c4485e.png" title=" Usuario random select" width="1920"/>
+                <img src="fcaf88968e10479172f011ce8f04ab25403c3ab83b9f4e900865bba7f4c4485e.png" title=" usuario clicks on [[ChromeDriver: chrome on WINDOWS (f90bb16a66ea4143614eb8b2ac96fda2)] -&gt; xpath: //h2[@class='woocommerce-loop-product__title']]" width="1920"/>
+                <img src="d14516cc56241bca93e63b23c3d11532da37b896de97fd1782d60250acf19f93.png" title=" usuario clicks on [[ChromeDriver: chrome on WINDOWS (f90bb16a66ea4143614eb8b2ac96fda2)] -&gt; xpath: //h2[@class='woocommerce-loop-product__title']] (completed)" width="1920"/>
+                <img src="d14516cc56241bca93e63b23c3d11532da37b896de97fd1782d60250acf19f93.png" title=" Usuario random select (completed)" width="1920"/>
+                <img src="d14516cc56241bca93e63b23c3d11532da37b896de97fd1782d60250acf19f93.png" title=" usuario clicks on btn quantity" width="1920"/>
+                <img src="96ce336c603ec0fb06a21f20e258a30836ee2b6353a5efee2afbbdde52758deb.png" title=" usuario clicks on btn quantity" width="1920"/>
+                <img src="ca5e6b187ec2516dc5bb617e03c79265fc1ca9ce2e6a5adcf353a0f4132fa0b5.png" title=" usuario clicks on btn quantity (completed)" width="1920"/>
+                <img src="96ce336c603ec0fb06a21f20e258a30836ee2b6353a5efee2afbbdde52758deb.png" title=" usuario clears field btn quantity" width="1920"/>
+                <img src="231a0ba24d2044d94b03411b13c4016dc8abbf54319c85f22b4e436b4b03989b.png" title=" usuario clears field btn quantity (completed)" width="1920"/>
+                <img src="231a0ba24d2044d94b03411b13c4016dc8abbf54319c85f22b4e436b4b03989b.png" title=" usuario enters '5' then hits [ENTER] into btn quantity" width="1920"/>
+                <img src="4ffff180d4509ef45a17208e58aeaae6b456fdd228355adb9a3a931f35b2f61d.png" title=" usuario enters '5' then hits [ENTER] into btn quantity" width="1920"/>
                 <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" usuario enters '5' then hits [ENTER] into btn quantity (completed)" width="1920"/>
                 <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" Usuario selectproduct task (completed)" width="1920"/>
+                <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" Usuario cart task" width="1920"/>
+                <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" usuario clicks on btn Cart" width="1920"/>
                 <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" When the user can select two products randomly with different quantities and add them to the cart. (completed)" width="1920"/>
-                <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" Then the user should be able to view the products in the shopping cart.: <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" Then the user should be able to view the products in the shopping cart." width="1920"/>
+                <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" Then validate should be (true): <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

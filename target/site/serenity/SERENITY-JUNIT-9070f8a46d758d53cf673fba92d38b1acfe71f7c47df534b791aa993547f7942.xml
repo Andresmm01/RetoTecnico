@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Add products to cart" skipped="0" tests="1" time="177.42" timestamp="2023-12-20 04:22:49"><testcase name="Successfully add two products to the shopping cart"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Add products to cart" skipped="0" tests="1" time="111.7" timestamp="2023-12-20 05:15:48"><testcase name="Successfully add two products to the shopping cart"><failure message="&#13;&#10;Expected: &lt;true&gt;&#13;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">&#13;
+Expected: &lt;true&gt;&#13;
+     but: was &lt;false&gt;</failure><system-err>&#13;
+Expected: &lt;true&gt;&#13;
+     but: was &lt;false&gt;&#13;
+com.Sanangel.Stepdef.SanangelStepdef.theUserShouldBeAbleToViewTheProductsInTheShoppingCart(SanangelStepdef.java:42)&#13;
+✽.the user should be able to view the products in the shopping cart.(file:///C:/Users/JoséAndrésMurilloMan/IdeaProjects/RetoTecnico/src/test/resources/features/addProductToCart.feature:7)&#13;
+</system-err></testcase></testsuite>

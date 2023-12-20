@@ -1,6 +1,7 @@
 package com.Sanangel.Stepdef;
 
 import com.Sanangel.Question.Validate;
+import com.Sanangel.Task.CartTask;
 import com.Sanangel.Task.HomeTask;
 import com.Sanangel.Task.OpenBrowserTask;
 import com.Sanangel.Task.SelectproductTask;
@@ -32,7 +33,8 @@ public class SanangelStepdef {
     @When("the user can select two products randomly with different quantities and add them to the cart.")
     public void theUserCanSelectTwoProductsRandomlyWithDifferentQuantitiesAndAddThemToTheCart() {
         theActorCalled("usuario").wasAbleTo(
-                SelectproductTask.select()
+                SelectproductTask.select(),
+                CartTask.Cart()
         );
     }
     @Then("the user should be able to view the products in the shopping cart.")
