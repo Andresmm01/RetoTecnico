@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="d0fe970dcaf403e92352362d3e00f34c8f88462cf506160d4bcc0fff615cf2f5.html">Add Products To Cart</a></span>
+                > <span class="truncate-60"><a
+                    href="9070f8a46d758d53cf673fba92d38b1acfe71f7c47df534b791aa993547f7942.html">Successfully add two products to the shopping cart </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-12-2023 16:22</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Add Products To Cart </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="3d74b427273235d0b6d93204f450caa4dbd7f63cf550df8ec55ed8d6a767485c.html">Successful
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Successfully add two products to the shopping cart
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" Given that the user opens the browser and searches for a product through the search bar." width="1920"/>
+                <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" Usuario open browser task" width="1920"/>
+                <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" usuario opens the browser at https://sanangel.com.co/" width="1920"/>
+                <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" Usuario open browser task (completed)" width="1920"/>
+                <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" Usuario home task" width="1920"/>
+                <img src="26d004ec8278ca2c0d45638845a232fcfbb608a6d40f09043ce179796f2c9e8e.png" title=" usuario clicks on input search" width="1920"/>
+                <img src="156ad91f43510bbb0b0f0f728951ff394d6cff7eb22b70692dfdef156ff50bb2.png" title=" usuario clicks on input search (completed)" width="1920"/>
+                <img src="156ad91f43510bbb0b0f0f728951ff394d6cff7eb22b70692dfdef156ff50bb2.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="58d86e1f871a8dbc0e01767bf74a8ececb103eec005d38efe9e3510b951f7bd0.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="b52c7cbd020516ac77721092c1efd339f87324296ac31b6c7e8f6bbc067874fb.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search (completed)" width="1920"/>
+                <img src="b52c7cbd020516ac77721092c1efd339f87324296ac31b6c7e8f6bbc067874fb.png" title=" Usuario home task (completed)" width="1920"/>
+                <img src="b52c7cbd020516ac77721092c1efd339f87324296ac31b6c7e8f6bbc067874fb.png" title=" Given that the user opens the browser and searches for a product through the search bar. (completed)" width="1920"/>
+                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" When the user can select two products randomly with different quantities and add them to the cart." width="1920"/>
+                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" Usuario selectproduct task" width="1920"/>
+                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" Usuario random select" width="1920"/>
+                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" usuario clicks on [[ChromeDriver: chrome on WINDOWS (4cfbe5deca88903bdfde0003fb562d63)] -&gt; xpath: //h2[@class='woocommerce-loop-product__title']]" width="1920"/>
+                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" Usuario random select (completed)" width="1920"/>
+                <img src="aa77c70aeb139e48e71cdb9d25486b4a168147aa9170884b5690577eeff6f835.png" title=" usuario clicks on btn quantity" width="1920"/>
+                <img src="d0780230122b379890e057c05bf086f5c334a3832d9a3b9a61f980d94b3a5aa6.png" title=" usuario clicks on btn quantity (completed)" width="1920"/>
+                <img src="d0780230122b379890e057c05bf086f5c334a3832d9a3b9a61f980d94b3a5aa6.png" title=" usuario clears field btn quantity" width="1920"/>
+                <img src="ea5cb7426b857d2e4aca65716380098730023e408a127d4038813b7e8fe7b846.png" title=" usuario clears field btn quantity (completed)" width="1920"/>
+                <img src="ea5cb7426b857d2e4aca65716380098730023e408a127d4038813b7e8fe7b846.png" title=" usuario enters '2' then hits [ENTER] into btn quantity" width="1920"/>
+                <img src="a5853e819dea9d31bda9b55b9fe5b4279eb6c9d16a1c4781fc7eff7a94812b03.png" title=" usuario enters '2' then hits [ENTER] into btn quantity" width="1920"/>
+                <img src="587940ab7eeef6abd1095a4acf83dce478d10172ead5fc25751576acb248bb8e.png" title=" usuario enters '2' then hits [ENTER] into btn quantity (completed)" width="1920"/>
+                <img src="587940ab7eeef6abd1095a4acf83dce478d10172ead5fc25751576acb248bb8e.png" title=" Usuario home task" width="1920"/>
+                <img src="587940ab7eeef6abd1095a4acf83dce478d10172ead5fc25751576acb248bb8e.png" title=" usuario clicks on input search" width="1920"/>
+                <img src="0767f3bf1f55752c0f359cb67aa1aff49faae241ec25a7a8e87164eac7dc98a2.png" title=" usuario clicks on input search" width="1920"/>
+                <img src="96a606430574f49b37704f93aa4d8beb904eb33f11dbe0daa71645f3db36995a.png" title=" usuario clicks on input search (completed)" width="1920"/>
+                <img src="96a606430574f49b37704f93aa4d8beb904eb33f11dbe0daa71645f3db36995a.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="b22ac2670f50f36da5e00e61b528c133c19977826b71970653e2d61c6f2324b9.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search (completed)" width="1920"/>
+                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" Usuario home task (completed)" width="1920"/>
+                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" Usuario home task" width="1920"/>
+                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" usuario clicks on input search" width="1920"/>
+                <img src="2cc8f9452c9158887156479e933c8090f78de463a3eaae4bc57c505c144e80e3.png" title=" usuario clicks on input search" width="1920"/>
+                <img src="d18909d58e2a6ae79751574858054363606a5e940c58bc5e4ca5bb74bd16059e.png" title=" usuario clicks on input search (completed)" width="1920"/>
+                <img src="6716160cb64d202076248134af818588b59084b9578269109b9cfe92bb7f4d76.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="fa22cccfce23d06345ab0dd13e19d1ddcad023378985d521e8f76f54b40a7af7.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search" width="1920"/>
+                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" usuario enters 'Rosas' then hits [ENTER] into input search (completed)" width="1920"/>
+                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" Usuario random select" width="1920"/>
+                <img src="51d6d17bd1d334cd77d6c71970ecea016c90fe73d73a5491fb6d056087b9fa81.png" title=" usuario clicks on [[ChromeDriver: chrome on WINDOWS (4cfbe5deca88903bdfde0003fb562d63)] -&gt; xpath: //h2[@class='woocommerce-loop-product__title']]" width="1920"/>
+                <img src="efe501990fbef237deee6dfd2032457369da1c5103adee40001049d8eb8c5d5a.png" title=" usuario clicks on [[ChromeDriver: chrome on WINDOWS (4cfbe5deca88903bdfde0003fb562d63)] -&gt; xpath: //h2[@class='woocommerce-loop-product__title']] (completed)" width="1920"/>
+                <img src="efe501990fbef237deee6dfd2032457369da1c5103adee40001049d8eb8c5d5a.png" title=" Usuario random select (completed)" width="1920"/>
+                <img src="efe501990fbef237deee6dfd2032457369da1c5103adee40001049d8eb8c5d5a.png" title=" usuario clicks on btn quantity" width="1920"/>
+                <img src="4901a450ac33e56b39bdf2fc8078cd4eb657c84d569da147608805237de1880c.png" title=" usuario clicks on btn quantity (completed)" width="1920"/>
+                <img src="4901a450ac33e56b39bdf2fc8078cd4eb657c84d569da147608805237de1880c.png" title=" usuario clears field btn quantity" width="1920"/>
+                <img src="f02cbba31eb2a17360228eda7d54f259e2ab205949df3c29c1ec3e996eff8398.png" title=" usuario clears field btn quantity (completed)" width="1920"/>
+                <img src="f02cbba31eb2a17360228eda7d54f259e2ab205949df3c29c1ec3e996eff8398.png" title=" usuario enters '5' then hits [ENTER] into btn quantity" width="1920"/>
+                <img src="d8ef4c6595312328b3be25a7c9a3402992e2242dcddad162ed030662e4754cc8.png" title=" usuario enters '5' then hits [ENTER] into btn quantity" width="1920"/>
+                <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" usuario enters '5' then hits [ENTER] into btn quantity (completed)" width="1920"/>
+                <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" Usuario selectproduct task (completed)" width="1920"/>
+                <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" When the user can select two products randomly with different quantities and add them to the cart. (completed)" width="1920"/>
+                <img src="a6d00ce839b228d6724cc79bfb40df9d680db80c216edf0192f4ee110d1b7048.png" title=" Then the user should be able to view the products in the shopping cart.: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.0</span>
+</div>
+</body>
+</html>
